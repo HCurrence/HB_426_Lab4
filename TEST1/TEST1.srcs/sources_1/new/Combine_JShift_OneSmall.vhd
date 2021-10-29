@@ -4,9 +4,9 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity Combine_JShift_OneSmall is
     generic(N: integer);
-    Port ( A : in unsigned (N downto 0);
-           B : in unsigned (N downto 0);
-           C : out unsigned(N downto 0));
+    Port ( A : in unsigned (N downto 0);  -- Instruction Jump Address
+           B : in unsigned (N downto 0);  -- PC + 4
+           C : out unsigned(N downto 0)); -- Jump Address
            
 end Combine_JShift_OneSmall;
 
@@ -15,11 +15,13 @@ architecture Behavioral of Combine_JShift_OneSmall is
 begin
 
     process(A, B)
-    variable shift_amount : integer;
+    variable first_bits : unsigned(3 downto 0);
+    variable last_bits : unsigned(11 downto 0);
     begin
-        shift_amount := TO_INTEGER(B);
+        first_bits := B(15 downto 12);
+        last_bits := A(11 downto 0);
     
-        C <= shift_left(A, shift_amount);
+        C <= first_bits & last_bits;
     end process;
 
 end Behavioral;

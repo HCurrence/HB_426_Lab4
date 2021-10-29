@@ -94,11 +94,13 @@ begin
            Rt=>Rt,
            Rd=>Rd,
            Func=>Func,
+           Immediate=>immediate,
            Opcode=>Instruction_ToOp,
            Instruction_Jump_shift=>Instruction_Jump_Shift);
     
     Control : entity work.Control(behavioral)
     port map(Opcode => Instruction_ToOp,
+           Func => Func,
            RegDst=> Opcode_RegDst,
            Branch=> Opcode_Branch,
            MemRead=>Mem_Read_sig,
