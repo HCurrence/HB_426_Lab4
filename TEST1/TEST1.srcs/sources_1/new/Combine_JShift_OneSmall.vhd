@@ -14,5 +14,12 @@ architecture Behavioral of Combine_JShift_OneSmall is
 
 begin
 
+    process(A, B)
+    variable shift_amount : integer;
+    begin
+        shift_amount := TO_INTEGER(B);
+    
+        C <= shift_left(A, shift_amount);
+    end process;
 
 end Behavioral;

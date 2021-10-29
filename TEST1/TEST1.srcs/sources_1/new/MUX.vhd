@@ -18,6 +18,14 @@ end MUX;
 architecture Behavioral of MUX is
 
 begin
-
+    
+    process(sel, A, B)
+    begin
+        if(sel = '0') then
+            C <= A;
+        else
+            C <= B;
+        end if;
+    end process;
 
 end Behavioral;

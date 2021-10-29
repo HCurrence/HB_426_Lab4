@@ -34,6 +34,16 @@ end Shift_Bubble;
 architecture Behavioral of Shift_Bubble is
 
 begin
+
+process(A, B)
+    variable shift_amount : integer;
+    variable a_value : unsigned(N downto 0);
+    begin
+        shift_amount := TO_INTEGER(B);
+        a_value := resize(A, N);
+    
+        C <= shift_left(a_value, shift_amount);
+    end process;
     
     
     

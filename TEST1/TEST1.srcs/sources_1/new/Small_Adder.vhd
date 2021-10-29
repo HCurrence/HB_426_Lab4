@@ -12,6 +12,10 @@ end Small_Adder;
 architecture Behavioral of Small_Adder is
 
 begin
-
+    
+    process(A, B)
+    begin
+        C <= A + B;
+    end process;
 
 end Behavioral;

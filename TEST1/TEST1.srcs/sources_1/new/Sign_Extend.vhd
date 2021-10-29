@@ -11,6 +11,14 @@ end Sign_Extend;
 architecture Behavioral of Sign_Extend is
 
 begin
-
+    process(immediate)
+    variable signed_immediate : signed(5 downto 0);
+    variable result : signed(N downto 0);
+    begin
+        signed_immediate := signed(immediate);
+        result := resize(signed_immediate, N);
+        
+        Sign_Extend_Result <= unsigned(result);
+    end process;
 
 end Behavioral;
