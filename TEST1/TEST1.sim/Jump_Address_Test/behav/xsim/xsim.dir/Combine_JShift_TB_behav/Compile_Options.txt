@@ -1,0 +1,1 @@
+-wto "671296115607402eafd13c2e6f74a7cb" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "Combine_JShift_TB_behav" "xil_defaultlib.Combine_JShift_TB" -log "elaborate.log" 

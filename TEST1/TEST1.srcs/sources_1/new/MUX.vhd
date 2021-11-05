@@ -8,7 +8,7 @@ use IEEE.NUMERIC_STD.ALL;
 --use UNISIM.VComponents.all;
 
 entity MUX is
-    generic(N : integer);
+    generic(N : integer := 15);
     Port ( Sel : in std_logic;
            A : in unsigned(N downto 0);
            B : in unsigned(N downto 0);

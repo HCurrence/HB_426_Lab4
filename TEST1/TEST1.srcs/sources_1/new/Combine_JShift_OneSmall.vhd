@@ -3,7 +3,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
 entity Combine_JShift_OneSmall is
-    generic(N: integer);
+    generic(N: integer := 15);
     Port ( A : in unsigned (N downto 0);  -- Instruction Jump Address
            B : in unsigned (N downto 0);  -- PC + 4
            C : out unsigned(N downto 0)); -- Jump Address

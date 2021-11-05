@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Control_TB_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Control_TB" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="999995fs"></ZoomStartTime>
+      <ZoomEndTime time="1000002fs"></ZoomEndTime>
+      <Cursor1Time time="1000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="109"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="11" />
+   <wvobject fp_name="/Control_TB/op_code" type="array">
+      <obj_property name="ElementShortName">op_code[3:0]</obj_property>
+      <obj_property name="ObjectShortName">op_code[3:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Control_TB/func_code" type="array">
+      <obj_property name="ElementShortName">func_code[2:0]</obj_property>
+      <obj_property name="ObjectShortName">func_code[2:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Control_TB/alu_code" type="array">
+      <obj_property name="ElementShortName">alu_code[2:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_code[2:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Control_TB/reg_dest" type="logic">
+      <obj_property name="ElementShortName">reg_dest</obj_property>
+      <obj_property name="ObjectShortName">reg_dest</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Control_TB/branch_sig" type="logic">
+      <obj_property name="ElementShortName">branch_sig</obj_property>
+      <obj_property name="ObjectShortName">branch_sig</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Control_TB/mem_read" type="logic">
+      <obj_property name="ElementShortName">mem_read</obj_property>
+      <obj_property name="ObjectShortName">mem_read</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Control_TB/mem_to_reg" type="logic">
+      <obj_property name="ElementShortName">mem_to_reg</obj_property>
+      <obj_property name="ObjectShortName">mem_to_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Control_TB/mem_write" type="logic">
+      <obj_property name="ElementShortName">mem_write</obj_property>
+      <obj_property name="ObjectShortName">mem_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Control_TB/alu_src" type="logic">
+      <obj_property name="ElementShortName">alu_src</obj_property>
+      <obj_property name="ObjectShortName">alu_src</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Control_TB/reg_write" type="logic">
+      <obj_property name="ElementShortName">reg_write</obj_property>
+      <obj_property name="ObjectShortName">reg_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Control_TB/jump_sig" type="logic">
+      <obj_property name="ElementShortName">jump_sig</obj_property>
+      <obj_property name="ObjectShortName">jump_sig</obj_property>
+   </wvobject>
+</wave_config>

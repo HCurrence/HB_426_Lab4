@@ -128,6 +128,16 @@ begin
                 ALUSrc <= 'X';
                 RegWrite <= '1';
                 Jump <= '0';
+            when others =>
+                RegDst <= 'Z';
+                Branch <= 'Z';
+                MemRead <= 'Z';
+                MemToReg <= 'Z';
+                ALUOp <= "ZZZ";
+                MemWrite <= 'Z';
+                ALUSrc <= 'Z';
+                RegWrite <= 'Z';
+                Jump <= 'Z';
         end case;
     end process;
 

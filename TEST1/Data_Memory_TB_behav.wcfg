@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Data_Memory_TB_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Data_Memory_TB" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="1600001fs"></ZoomEndTime>
+      <Cursor1Time time="1600000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="119"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="6" />
+   <wvobject fp_name="/Data_Memory_TB/read" type="logic">
+      <obj_property name="ElementShortName">read</obj_property>
+      <obj_property name="ObjectShortName">read</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Data_Memory_TB/write" type="logic">
+      <obj_property name="ElementShortName">write</obj_property>
+      <obj_property name="ObjectShortName">write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Data_Memory_TB/address" type="array">
+      <obj_property name="ElementShortName">address[15:0]</obj_property>
+      <obj_property name="ObjectShortName">address[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Data_Memory_TB/dataIn" type="array">
+      <obj_property name="ElementShortName">dataIn[15:0]</obj_property>
+      <obj_property name="ObjectShortName">dataIn[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Data_Memory_TB/write_data" type="array">
+      <obj_property name="ElementShortName">write_data[0:3][15:0]</obj_property>
+      <obj_property name="ObjectShortName">write_data[0:3][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Data_Memory_TB/dataOut" type="array">
+      <obj_property name="ElementShortName">dataOut[15:0]</obj_property>
+      <obj_property name="ObjectShortName">dataOut[15:0]</obj_property>
+   </wvobject>
+</wave_config>

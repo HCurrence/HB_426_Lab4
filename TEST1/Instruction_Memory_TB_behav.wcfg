@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Instruction_Memory_TB_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Instruction_Memory_TB" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="1000001fs"></ZoomEndTime>
+      <Cursor1Time time="999997fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="119"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="8" />
+   <wvobject fp_name="/Instruction_Memory_TB/address" type="array">
+      <obj_property name="ElementShortName">address[15:0]</obj_property>
+      <obj_property name="ObjectShortName">address[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Instruction_Memory_TB/rs_sig" type="array">
+      <obj_property name="ElementShortName">rs_sig[2:0]</obj_property>
+      <obj_property name="ObjectShortName">rs_sig[2:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Instruction_Memory_TB/rt_sig" type="array">
+      <obj_property name="ElementShortName">rt_sig[2:0]</obj_property>
+      <obj_property name="ObjectShortName">rt_sig[2:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Instruction_Memory_TB/rd_sig" type="array">
+      <obj_property name="ElementShortName">rd_sig[2:0]</obj_property>
+      <obj_property name="ObjectShortName">rd_sig[2:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Instruction_Memory_TB/func_code" type="array">
+      <obj_property name="ElementShortName">func_code[2:0]</obj_property>
+      <obj_property name="ObjectShortName">func_code[2:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Instruction_Memory_TB/imm" type="array">
+      <obj_property name="ElementShortName">imm[5:0]</obj_property>
+      <obj_property name="ObjectShortName">imm[5:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Instruction_Memory_TB/op_code" type="array">
+      <obj_property name="ElementShortName">op_code[3:0]</obj_property>
+      <obj_property name="ObjectShortName">op_code[3:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Instruction_Memory_TB/jump_shift" type="array">
+      <obj_property name="ElementShortName">jump_shift[11:0]</obj_property>
+      <obj_property name="ObjectShortName">jump_shift[11:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+</wave_config>

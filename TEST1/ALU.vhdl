@@ -3,8 +3,8 @@ use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
 entity ALUctr is
-    generic (N : integer;
-             R : integer);
+    generic (N : integer := 15;
+             R : integer := 2);
     port(   
     --Inputs
     ALUCtr : in unsigned(R downto 0);

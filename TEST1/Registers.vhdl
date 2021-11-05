@@ -3,8 +3,8 @@ use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
 entity Registers is
-    generic(N : integer;
-            R : integer);
+    generic(N : integer := 15;
+            R : integer := 2);
     port(   
     --Inputs
     clk : std_logic;
@@ -19,7 +19,7 @@ entity Registers is
 end entity;
 
 architecture behavior of Registers is
-    type Reg is array (0 to 3) of unsigned(0 to N);
+    type Reg is array (0 to 7) of unsigned(0 to N);
     signal Registers: Reg := (others =>(others => '0'));
 
 begin
