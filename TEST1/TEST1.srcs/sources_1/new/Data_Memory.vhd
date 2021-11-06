@@ -28,7 +28,7 @@ begin
         end if;
     end process writeData;
     
-    fetchData : process(MemRead, ALU_Result)
+    fetchData : process(MemRead, ALU_Result, memory)
     variable address : integer;
     begin
         if(MemRead = '1') then

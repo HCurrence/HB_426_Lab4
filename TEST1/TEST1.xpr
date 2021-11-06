@@ -33,7 +33,7 @@
     <Option Name="SimulatorGccInstallDirActiveHdl" Val=""/>
     <Option Name="TargetLanguage" Val="VHDL"/>
     <Option Name="BoardPart" Val=""/>
-    <Option Name="ActiveSimSet" Val="Registers_Test"/>
+    <Option Name="ActiveSimSet" Val="ALU_Test"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
     <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
@@ -45,7 +45,7 @@
     <Option Name="IPUserFilesDir" Val="$PIPUSERFILESDIR"/>
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
-    <Option Name="WTXSimLaunchSim" Val="36"/>
+    <Option Name="WTXSimLaunchSim" Val="38"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -168,76 +168,77 @@
       <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/sim_1/new/ALUctr_TB.vhd">
         <FileInfo>
+          <Attr Name="UserDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sim_1/new/Combine_JShift_TB.vhd">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UserDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sim_1/new/Control_TB.vhd">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UserDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sim_1/new/Data_Memory_TB.vhd">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UserDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sim_1/new/Instruction_Memory_TB.vhd">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UserDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sim_1/new/MUX_TB.vhd">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UserDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sim_1/new/Registers_TB.vhd">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UserDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sim_1/new/Shift_Bubble_TB.vhd">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UserDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sim_1/new/Sign_Extend_TB.vhd">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UserDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sim_1/new/Small_Adder_TB.vhd">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UserDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="ALUctr_TB"/>
+        <Option Name="TopModule" Val="top_level_tb"/>
         <Option Name="TopLib" Val="xil_defaultlib"/>
         <Option Name="TopAutoSet" Val="TRUE"/>
         <Option Name="TransportPathDelay" Val="0"/>
@@ -287,6 +288,7 @@
       </Config>
     </FileSet>
     <FileSet Name="sim_3" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_3">
+      <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/sim_3/imports/new/Instruction_Memory_TB.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/Instruction_Memory_TB.vhd"/>
@@ -316,6 +318,7 @@
       </Config>
     </FileSet>
     <FileSet Name="ALU_Test" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/ALU_Test">
+      <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/ALU_Test/imports/new/ALUctr_TB.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/ALUctr_TB.vhd"/>
@@ -345,6 +348,7 @@
       </Config>
     </FileSet>
     <FileSet Name="Jump_Address_Test" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/Jump_Address_Test">
+      <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/Jump_Address_Test/imports/new/Combine_JShift_TB.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/Combine_JShift_TB.vhd"/>
@@ -374,6 +378,7 @@
       </Config>
     </FileSet>
     <FileSet Name="Control_Test" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/Control_Test">
+      <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/Control_Test/imports/new/Control_TB.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/Control_TB.vhd"/>
@@ -403,6 +408,7 @@
       </Config>
     </FileSet>
     <FileSet Name="MUX_test" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/MUX_test">
+      <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/MUX_test/imports/new/MUX_TB.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/MUX_TB.vhd"/>
@@ -432,6 +438,7 @@
       </Config>
     </FileSet>
     <FileSet Name="Shift_Bubble_Test" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/Shift_Bubble_Test">
+      <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/Shift_Bubble_Test/imports/new/Shift_Bubble_TB.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/Shift_Bubble_TB.vhd"/>
@@ -461,6 +468,7 @@
       </Config>
     </FileSet>
     <FileSet Name="Sign_Extend_Test" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/Sign_Extend_Test">
+      <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/Sign_Extend_Test/imports/new/Sign_Extend_TB.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/Sign_Extend_TB.vhd"/>
@@ -490,6 +498,7 @@
       </Config>
     </FileSet>
     <FileSet Name="Small_Adder_Test" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/Small_Adder_Test">
+      <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/Small_Adder_Test/imports/new/Small_Adder_TB.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/Small_Adder_TB.vhd"/>
@@ -519,6 +528,7 @@
       </Config>
     </FileSet>
     <FileSet Name="Registers_Test" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/Registers_Test">
+      <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/Registers_Test/imports/new/Registers_TB.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/Registers_TB.vhd"/>
