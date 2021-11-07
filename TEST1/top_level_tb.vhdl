@@ -7,10 +7,12 @@ end entity;
 
 architecture behavior of top_level_tb is
     signal clk_sig : std_logic := '0';
-        
+    constant TIME_DELAY : time := 20 ns;
+    constant NUM_VALS : integer := 39;
 begin    
     DUT : entity work.top_level(simple)
           port map(clk => clk_sig);
+          
 clock : process
     begin
         for i in 0 to 2 * (NUM_VALS) loop

@@ -81,7 +81,7 @@ architecture simple of top_level is
     
     --Clear Reg Mux Signals
     signal ClearMux_Result : unsigned(N downto 0);
-    
+    signal ClearOn : unsigned(N downto 0);
     --Jump Mux signals 
     signal To_Jump_Mux : unsigned(15 downto 0);
     
@@ -126,6 +126,7 @@ begin
            MemWrite=>Mem_Write_sig,
            ALUSrc=>Opcode_ALUSrc,
            RegWrite=>RegWr,
+           ClearReg=>Opcode_ClearReg,
            LoadImmediatesMux=>Opcode_LoadImmediatesMux,
            Jump=>Jump_Sig);
            
@@ -171,7 +172,7 @@ begin
        generic map(N => N)
        port map(Sel=> Opcode_ClearReg,
                 A=>MemToReg_Result,
-                B=>busW,
+                B=>ClearOn,
                 C=>ClearMux_Result);
                
        MUX_ALUSrc : entity work.Mux(Behavioral)
