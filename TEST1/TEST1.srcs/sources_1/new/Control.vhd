@@ -12,7 +12,9 @@ entity Control is
            ALUOp : out Unsigned(2 downto 0);
            MemWrite : out STD_LOGIC;
            ALUSrc : out STD_LOGIC;
-		   LoadImmediatesMux : out STD_LOGIC;
+           LoadImmediateSelect : out unsigned(1 downto 0);
+           ClearReg : out std_logic;
+		   LoadImmediatesMux : out STD_LOGIC; --loadi signal
            RegWrite : out STD_LOGIC;
            Jump : out STD_LOGIC);
 end Control;
@@ -32,6 +34,9 @@ begin
                 ALUOp <= Func;
                 MemWrite <= '0';
                 ALUSrc <= '0';
+                LoadImmediateSelect <= "XX";
+                ClearReg <= '0';
+		        LoadImmediatesMux <= '0'; --loadi signal
                 RegWrite <= '1';
                 Jump <= '0';
             when "0010" => -- load word (lw)
@@ -42,6 +47,9 @@ begin
                 ALUOp <= "000";
                 MemWrite <= '0';
                 ALUSrc <= '1';
+                LoadImmediateSelect <= "XX";
+                ClearReg <= '0';
+		        LoadImmediatesMux <= '0'; --loadi signal
                 RegWrite <= '1';
                 Jump <= '0';
             when "0011" => -- store word (sw)
@@ -52,6 +60,9 @@ begin
                 ALUOp <= "000";
                 MemWrite <= '1';
                 ALUSrc <= '1';
+                LoadImmediateSelect <= "XX";
+                ClearReg <= '0';
+		        LoadImmediatesMux <= '0'; --loadi signal
                 RegWrite <= '0';
                 Jump <= '0';
             when "0100" => -- load byte (lb)
@@ -62,6 +73,9 @@ begin
                 ALUOp <= "000";
                 MemWrite <= '0';
                 ALUSrc <= '1';
+                LoadImmediateSelect <= "XX";
+                ClearReg <= '0';
+		        LoadImmediatesMux <= '0'; --loadi signal
                 RegWrite <= '1';
                 Jump <= '0';
             when "0101" => -- store byte (sb)
@@ -72,6 +86,9 @@ begin
                 ALUOp <= "000";
                 MemWrite <= '0';
                 ALUSrc <= '1';
+                LoadImmediateSelect <= "XX";
+                ClearReg <= '0';
+		        LoadImmediatesMux <= '0'; --loadi signal
                 RegWrite <= '0';
                 Jump <= '0';
             when "0110" -- load upper immediate (lui)
@@ -85,6 +102,9 @@ begin
                 ALUOp <= "101";
                 MemWrite <= '1';
                 ALUSrc <= '1';
+                LoadImmediateSelect <= Opcode(1 downto 0);
+                ClearReg <= '0';
+		        LoadImmediatesMux <= '1'; --loadi signal
                 RegWrite <= '0';
                 Jump <= '0';
             when "1010" -- branch when equal (beq)
@@ -96,6 +116,9 @@ begin
                 ALUOp <= "001";
                 MemWrite <= '0';
                 ALUSrc <= 'X';
+                LoadImmediateSelect <= "XX";
+                ClearReg <= '0';
+		        LoadImmediatesMux <= '0'; --loadi signal
                 RegWrite <= '0';
                 Jump <= '0';
             when "1100" -- jump (j)
@@ -107,6 +130,9 @@ begin
                 ALUOp <= "XXX";
                 MemWrite <= '0';
                 ALUSrc <= 'X';
+                LoadImmediateSelect <= "XX";
+                ClearReg <= '0';
+		        LoadImmediatesMux <= '0'; --loadi signal
                 RegWrite <= '0';
                 Jump <= '1';
             when "1110" => -- add immediate (addi)
@@ -117,6 +143,9 @@ begin
                 ALUOp <= "000";
                 MemWrite <= '0';
                 ALUSrc <= '1';
+                LoadImmediateSelect <= "XX";
+                ClearReg <= '0';
+		        LoadImmediatesMux <= '0'; --loadi signal
                 RegWrite <= '1';
                 Jump <= '0';
             when "1111" => -- clear register (cr)
@@ -127,6 +156,9 @@ begin
                 ALUOp <= "XXX";
                 MemWrite <= '0';
                 ALUSrc <= 'X';
+                LoadImmediateSelect <= "XX";
+                ClearReg <= '1';
+		        LoadImmediatesMux <= '0'; --loadi signal
                 RegWrite <= '1';
                 Jump <= '0';
             when others =>
@@ -137,6 +169,9 @@ begin
                 ALUOp <= "ZZZ";
                 MemWrite <= 'Z';
                 ALUSrc <= 'Z';
+                LoadImmediateSelect <= "ZZ";
+                ClearReg <= 'Z';
+		        LoadImmediatesMux <= 'Z'; --loadi signal
                 RegWrite <= 'Z';
                 Jump <= 'Z';
         end case;

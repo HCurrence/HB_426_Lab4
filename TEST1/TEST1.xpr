@@ -146,15 +146,23 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/new/mux_two_outputs.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PPRDIR/top_level.vhdl">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/ALU.vhdl">
+      <File Path="$PSRCDIR/sources_1/imports/TEST1/ALU.vhdl">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/ALU.vhdl"/>
+          <Attr Name="ImportTime" Val="1636343033"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -571,6 +579,7 @@
       </Config>
     </FileSet>
     <FileSet Name="loadi_component_test" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/loadi_component_test">
+      <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/loadi_component_test/new/loadi_component_tb.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>

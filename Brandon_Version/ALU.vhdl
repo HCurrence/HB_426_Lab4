@@ -3,8 +3,8 @@ use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
 entity ALU is
-    generic (N : integer := 15;
-             R : integer := 2);
+    generic (N : integer;
+             R : integer);
     port(   
     --Inputs
     ALUCtr : in unsigned(R downto 0);
@@ -23,8 +23,6 @@ architecture behavior of ALU is
 procedure add(signal  A : in unsigned(N downto 0);
                       signal B : in unsigned(N downto 0);
                       signal Z : out std_logic;
---                      signal O : out std_logic;
---                      signal CO: out std_logic;
                       signal Res : out unsigned(N downto 0)) is
                       
 variable carry : unsigned(N downto 0);
@@ -37,18 +35,12 @@ begin
         carry(i) := (a(i) AND carry(i-1)) OR (b(i) AND carry(i-1)) OR (a(i) AND b(i));
     end loop;
     
-    --CO <= carry(N);
     res <= result;
     if((result) = 0) THEN
         Z <= '1';
     else
         Z <= '0';
     END IF;
---    if(carry(N) = '1' AND result(N) = '1') THEN
---        O <= '1';
---    else
---        O <= '0';
---    end if;
 end procedure;
 
 --***********************************************************************
@@ -56,35 +48,12 @@ end procedure;
 procedure sub(signal  A : in unsigned(N downto 0);
                       signal B : in unsigned(N downto 0);
                       signal Z : out std_logic;
---                      signal O : out std_logic;
---                      signal CO: out std_logic;
                       signal Res : out unsigned(N downto 0)) is
---variable carry : unsigned(N downto 0);
 variable result: unsigned(N downto 0);
 variable Bnot : unsigned(N downto 0);
 begin
   Res <= A-B;
   Z <= '0';
-  
---  Bnot := not B;
---  result(0) := A(0) XOR Bnot(0);
---  carry(0) := A(0) and Bnot(0);
---  for i in 1 to N loop
---      result(i) := A(i) XOR Bnot(i) XOR carry(i-1);
---      carry(i) := (a(i) AND carry(i-1)) OR (bnot(i) AND carry(i-1)) OR (a(i) AND bnot(i));
---  end loop;
---  CO <= carry(N);
---  res <= result;
---  if(to_integer(result) = 0) THEN
---      Z <= '1';
---  else
---      Z <= '0';
---  END IF;
---  if(carry(N) = '1' AND result(N) = '1') THEN
---      O <= '1';
---  else
---      O <= '0';
---  end if;
 end procedure;
 
 --***********************************************************************
@@ -173,26 +142,6 @@ begin
 result := not(A);
 Res <= result;
 
---was Arith Right Shift
---    if A(N) = '1' then
---        result(N) := '1';
---        result(14 downto 1) := A(13 downto 0);
---        result(0) := '0';
---    else
---        result(N) := '0';
---        result(14 downto 1) := A(13 downto 0);
---        result(0) := '0';
---    end if;
-    
---    res <= result;
---    if(to_integer(result) = 0) THEN
---          Z <= '1';
---      else
---          Z <= '0';
---      END IF;
-
-    
-
 end procedure;
 
 --***********************************************************************
@@ -260,3 +209,6 @@ begin
     end process;
     
 end architecture;
+
+
+

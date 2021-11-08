@@ -2,7 +2,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
-entity ALU is
+entity ALUctr is
     generic (N : integer := 15;
              R : integer := 2);
     port(   

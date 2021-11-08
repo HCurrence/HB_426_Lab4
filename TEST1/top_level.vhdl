@@ -117,18 +117,18 @@ begin
     
     Control : entity work.Control(behavioral)
     port map(Opcode => Instruction_ToOp,
-           RegDst=> Opcode_RegDst,
            Func => Func,
+           RegDst=> Opcode_RegDst,
            Branch=> Opcode_Branch,
            MemRead=>Mem_Read_sig,
            MemtoReg=>Opcode_MemtoReg,
            ALUOp=>ALUCtr,
            MemWrite=>Mem_Write_sig,
            ALUSrc=>Opcode_ALUSrc,
-           RegWrite=>RegWr,
            LoadImmediateSelect=>Instruction_ToOp(1 downto 0),
            ClearReg=>Opcode_ClearReg,
            LoadImmediatesMux=>Opcode_LoadImmediatesMux,
+           RegWrite=>RegWr,
            Jump=>Jump_Sig);
            
     ALU : entity work.ALU(behavior)
@@ -137,9 +137,8 @@ begin
     port map(ALUctr => ALUctr,
              BusA => busA,
              BusB => Result_of_ALU_Src,
-             Result => busW,
-             Zero => ALU_Zero
-             );
+             Zero => ALU_Zero,
+             Result => busW);
              
      Registers : entity work.Registers(behavior)
      generic map(N => N,
@@ -257,11 +256,9 @@ begin
         Load_Immediate_Component : entity work.Load_Immediate_Component(Behavioral)
         generic map(N=>N,
                     R => 1)
-        port map(Sel=>Opcode_LoadImmediate_Selection,
-                 A=>Sign_Extend_Result_sig,
+        port map(A=>Sign_Extend_Result_sig,
                  B=>load_Immediate_high,
-                 C=>Load_Immediate_Result
-                 );          
+                 C=>Load_Immediate_Result);          
         
         Combine_JShift_OneSmall : entity work.Combine_JShift_OneSmall(Behavioral)
         generic map(N => N)
