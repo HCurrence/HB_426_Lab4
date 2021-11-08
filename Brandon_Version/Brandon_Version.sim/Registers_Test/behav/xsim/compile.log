@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/Registers.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Registers'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/Registers_Test/imports/new/Registers_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Registers_TB'

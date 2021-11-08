@@ -12,6 +12,7 @@ entity Control is
            ALUOp : out Unsigned(2 downto 0);
            MemWrite : out STD_LOGIC;
            ALUSrc : out STD_LOGIC;
+		   LoadImmediatesMux : out STD_LOGIC;
            RegWrite : out STD_LOGIC;
            Jump : out STD_LOGIC);
 end Control;
