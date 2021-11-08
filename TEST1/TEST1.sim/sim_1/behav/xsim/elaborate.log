@@ -1,0 +1,32 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/X/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 671296115607402eafd13c2e6f74a7cb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot top_level_tb_behav xil_defaultlib.top_level_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Instruction_Memory [instruction_memory_default]
+Compiling architecture behavioral of entity xil_defaultlib.PC [pc_default]
+Compiling architecture behavioral of entity xil_defaultlib.Control [control_default]
+Compiling architecture behavior of entity xil_defaultlib.ALU [alu_default]
+Compiling architecture behavior of entity xil_defaultlib.Registers [registers_default]
+Compiling architecture behavioral of entity xil_defaultlib.Data_Memory [data_memory_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX [mux_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_two_outputs [mux_two_outputs_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX [\MUX(n=2)\]
+Compiling architecture behavioral of entity xil_defaultlib.AND_Gate [and_gate_default]
+Compiling architecture behavioral of entity xil_defaultlib.Sign_Extend [sign_extend_default]
+Compiling architecture behavioral of entity xil_defaultlib.Small_Adder [small_adder_default]
+Compiling architecture behavioral of entity xil_defaultlib.Shift_Bubble [\Shift_Bubble(r=11)\]
+Compiling architecture behavioral of entity xil_defaultlib.Shift_Bubble [shift_bubble_default]
+Compiling architecture behavioral of entity xil_defaultlib.load_immediate_component [load_immediate_component_default]
+Compiling architecture behavioral of entity xil_defaultlib.Combine_JShift_OneSmall [combine_jshift_onesmall_default]
+Compiling architecture simple of entity xil_defaultlib.top_level [top_level_default]
+Compiling architecture behavior of entity xil_defaultlib.top_level_tb
+Built simulation snapshot top_level_tb_behav

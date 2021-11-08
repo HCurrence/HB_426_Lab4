@@ -125,7 +125,7 @@ begin
            ALUOp=>ALUCtr,
            MemWrite=>Mem_Write_sig,
            ALUSrc=>Opcode_ALUSrc,
-           LoadImmediateSelect=>Instruction_ToOp(1 downto 0),
+           LoadImmediateSelect=>Opcode_LoadImmediate_Selection,
            ClearReg=>Opcode_ClearReg,
            LoadImmediatesMux=>Opcode_LoadImmediatesMux,
            RegWrite=>RegWr,
@@ -257,7 +257,7 @@ begin
         generic map(N=>N,
                     R => 1)
         port map(A=>Sign_Extend_Result_sig,
-                 B=>load_Immediate_high,
+                 B=>Opcode_LoadImmediate_Selection,
                  C=>Load_Immediate_Result);          
         
         Combine_JShift_OneSmall : entity work.Combine_JShift_OneSmall(Behavioral)

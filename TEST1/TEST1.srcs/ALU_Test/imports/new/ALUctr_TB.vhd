@@ -65,9 +65,8 @@ begin
         end loop;
     end process stimulus;
     
-    DUT : entity work.ALUctr(behavior)
+    DUT : entity work.ALU(behavior)
         port map(ALUCtr => ctrl_code, BusA => in1,
                 BusB => in2, zero => zero_sig,
-                overflow => overflow_sig, carryout => carry,
                 result => result_sig);
 end Behavioral;

@@ -11,15 +11,17 @@ end PC;
 
 architecture Behavioral of PC is
 
-signal program_counter : unsigned(N downto 0);
+signal program_counter : unsigned(N downto 0) := (others => '0');
 
 begin
     
     process(clk, A)
     begin
         if(rising_edge(clk)) then
-            C <= A;
+            program_counter <= A;
         end if;
+        
+        C <= program_counter;
     end process;
 
 end Behavioral;
