@@ -122,7 +122,7 @@ begin
            MemWrite=>Mem_Write_sig,
            ALUSrc=>Opcode_ALUSrc,
            RegWrite=>RegWr,
-           LoadImmediateSelect=>Opcode_LoadImmediate_Selection,
+           LoadImmediateSelect=>Instruction_ToOp(1 downto 0),
            ClearReg=>Opcode_ClearReg,
            LoadImmediatesMux=>Opcode_LoadImmediatesMux,
            Jump=>Jump_Sig);

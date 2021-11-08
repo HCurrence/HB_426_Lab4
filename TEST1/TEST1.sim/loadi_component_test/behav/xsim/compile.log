@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/new/load_immediate_component.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'load_immediate_component'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/loadi_component_test/new/loadi_component_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'loadi_component_tb'
