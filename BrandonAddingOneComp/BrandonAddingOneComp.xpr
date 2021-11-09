@@ -29,6 +29,7 @@
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
+    <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
     <Option Name="IPCachePermission" Val="read"/>
     <Option Name="IPCachePermission" Val="write"/>
     <Option Name="EnableCoreContainer" Val="FALSE"/>
@@ -167,16 +168,17 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/mux_two_outputs.vhd">
+      <File Path="$PPRDIR/../TEST1/top_level.vhdl">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../TEST1/TEST1.srcs/sources_1/new/mux_two_outputs.vhd"/>
-          <Attr Name="ImportTime" Val="1636419546"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../TEST1/top_level.vhdl">
+      <File Path="$PSRCDIR/sources_1/new/mux_two_outputs.vhd">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../TEST1/TEST1.srcs/sources_1/new/mux_two_outputs.vhd"/>
+          <Attr Name="ImportTime" Val="1636419546"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
