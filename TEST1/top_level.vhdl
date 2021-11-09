@@ -63,7 +63,7 @@ architecture simple of top_level is
     
     --Small Adder one Signal from PC to 
     signal From_PC : unsigned(N downto 0);
-    signal Plus_One : unsigned(N downto 0) := "0000000000000001";
+    signal Plus_One : unsigned(N downto 0);
     signal Small_Adder_One_Result : unsigned(N downto 0);
     
     --Small Adder Two Signal For 
@@ -83,7 +83,7 @@ architecture simple of top_level is
     
     --Clear Reg Mux Signals
     signal ClearMux_Result : unsigned(N downto 0);
-    signal ClearOn : unsigned(N downto 0) := (others => '0');
+    signal ClearOn : unsigned(N downto 0);
     --Jump Mux signals 
     signal To_Jump_Mux : unsigned(15 downto 0);
     
@@ -97,8 +97,10 @@ architecture simple of top_level is
     --Mux From Reg to load immediate mux to Data Memory
     signal BusBInterConnector : unsigned(N downto 0);
     signal BusAtoLoadImmediate : unsigned(N downto 0);
-    signal LoadImmediateZero_Sig : unsigned(N downto 0) := (others => '0');
+    signal LoadImmediateZero_Sig : unsigned(N downto 0);
     signal MUX_ALU_To_LoadImmediate_Result : unsigned(N downto 0);
+    signal MUX_LoadImmediate_RegA : unsigned(N downto 0);
+    
     --Combine Jump and Small adder signal
     signal Jump_Address : unsigned(N downto 0);
     
@@ -157,7 +159,7 @@ begin
              Rs => Rs,
              Rt => Rt,
              busW => ClearMux_Result,
-             BusA => BusA,
+             BusA => MUX_LoadImmediate_RegA,
              BusB => BusBInterConnector);
              
       Mem : entity work.Data_Memory(Behavioral)
@@ -187,15 +189,15 @@ begin
        generic map(N => N)
        port map(Sel=> Opcode_ALUSrc,
                 A=>BusBInterConnector,
-                B=>Loads_Immediates_Mux_Result,
+                B=>Sign_Extend_Result_sig,
                 C=>Result_of_ALU_Src);
                 
        MUX_LoadImmediates : entity work.Mux(Behavioral)
        generic map(N => N)
        port map(Sel=> Opcode_LoadImmediatesMux,
-                A=>Sign_Extend_Result_sig,
+                A=>MUX_LoadImmediate_RegA,
                 B=>Load_Immediate_Result,
-                C=>Loads_Immediates_Mux_Result);
+                C=>BusA);
                 
        MUX_ALU_To_LoadImmediate_Mux : entity work.Mux(Behavioral)
        generic map(N => N)
