@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../TEST1.srcs/sources_1/new/Combine_JShift_OneSmall.vhd" \
+"../../../../TEST1.srcs/Jump_Address_Test/imports/new/Combine_JShift_TB.vhd" \
+
+# Do not sort compile order
+nosort
