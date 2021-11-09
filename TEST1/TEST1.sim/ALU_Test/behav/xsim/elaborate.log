@@ -11,6 +11,6 @@ Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
 Compiling package ieee.numeric_std
-Compiling architecture behavior of entity xil_defaultlib.ALUctr [aluctr_default]
+Compiling architecture behavior of entity xil_defaultlib.ALU [alu_default]
 Compiling architecture behavioral of entity xil_defaultlib.aluctr_tb
 Built simulation snapshot ALUctr_TB_behav

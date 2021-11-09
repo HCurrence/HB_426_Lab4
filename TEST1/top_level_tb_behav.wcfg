@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="top_level_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="top_level_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="400000fs"></ZoomEndTime>
+      <Cursor1Time time="400000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="84"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="15" />
+   <wvobject fp_name="/top_level_tb/clk_sig" type="logic">
+      <obj_property name="ElementShortName">clk_sig</obj_property>
+      <obj_property name="ObjectShortName">clk_sig</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_level_tb/DUT/PC/C" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">C[15:0]</obj_property>
+      <obj_property name="ObjectShortName">C[15:0]</obj_property>
+      <obj_property name="label">PC</obj_property>
+   </wvobject>
+   <wvobject fp_name="group13" type="group">
+      <obj_property name="label">Instructory Memory Signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/top_level_tb/DUT/Instruction_Memory/Read_Address" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">Read_Address[15:0]</obj_property>
+         <obj_property name="ObjectShortName">Read_Address[15:0]</obj_property>
+         <obj_property name="label">Read Address</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_level_tb/DUT/Instruction_Memory/Opcode" type="array">
+         <obj_property name="ElementShortName">Opcode[3:0]</obj_property>
+         <obj_property name="ObjectShortName">Opcode[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_level_tb/DUT/Instruction_Memory/Rs" type="array">
+         <obj_property name="ElementShortName">Rs[2:0]</obj_property>
+         <obj_property name="ObjectShortName">Rs[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_level_tb/DUT/Instruction_Memory/Rt" type="array">
+         <obj_property name="ElementShortName">Rt[2:0]</obj_property>
+         <obj_property name="ObjectShortName">Rt[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_level_tb/DUT/Instruction_Memory/Rd" type="array">
+         <obj_property name="ElementShortName">Rd[2:0]</obj_property>
+         <obj_property name="ObjectShortName">Rd[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_level_tb/DUT/Instruction_Memory/Func" type="array">
+         <obj_property name="ElementShortName">Func[2:0]</obj_property>
+         <obj_property name="ObjectShortName">Func[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_level_tb/DUT/Instruction_Memory/immediate" type="array">
+         <obj_property name="ElementShortName">immediate[5:0]</obj_property>
+         <obj_property name="ObjectShortName">immediate[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_level_tb/DUT/Instruction_Memory/Instruction_Jump_Shift" type="array">
+         <obj_property name="ElementShortName">Instruction_Jump_Shift[11:0]</obj_property>
+         <obj_property name="ObjectShortName">Instruction_Jump_Shift[11:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group28" type="group">
+      <obj_property name="label">Control Signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/top_level_tb/DUT/Control/Opcode" type="array">
+         <obj_property name="ElementShortName">Opcode[3:0]</obj_property>
+         <obj_property name="ObjectShortName">Opcode[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_level_tb/DUT/Control/Func" type="array">
+         <obj_property name="ElementShortName">Func[2:0]</obj_property>
+         <obj_property name="ObjectShortName">Func[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_level_tb/DUT/Control/RegDst" type="logic">
+         <obj_property name="ElementShortName">RegDst</obj_property>
+         <obj_property name="ObjectShortName">RegDst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_level_tb/DUT/Control/Branch" type="logic">
+         <obj_property name="ElementShortName">Branch</obj_property>
+         <obj_property name="ObjectShortName">Branch</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_level_tb/DUT/Control/MemRead" type="logic">
+         <obj_property name="ElementShortName">MemRead</obj_property>
+         <obj_property name="ObjectShortName">MemRead</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_level_tb/DUT/Control/MemtoReg" type="logic">
+         <obj_property name="ElementShortName">MemtoReg</obj_property>
+         <obj_property name="ObjectShortName">MemtoReg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_level_tb/DUT/Control/ALUOp" type="array">
+         <obj_property name="ElementShortName">ALUOp[2:0]</obj_property>
+         <obj_property name="ObjectShortName">ALUOp[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_level_tb/DUT/Control/MemWrite" type="logic">
+         <obj_property name="ElementShortName">MemWrite</obj_property>
+         <obj_property name="ObjectShortName">MemWrite</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_level_tb/DUT/Control/ALUSrc" type="logic">
+         <obj_property name="ElementShortName">ALUSrc</obj_property>
+         <obj_property name="ObjectShortName">ALUSrc</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_level_tb/DUT/Control/LoadImmediateSelect" type="array">
+         <obj_property name="ElementShortName">LoadImmediateSelect[1:0]</obj_property>
+         <obj_property name="ObjectShortName">LoadImmediateSelect[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_level_tb/DUT/Control/ClearReg" type="logic">
+         <obj_property name="ElementShortName">ClearReg</obj_property>
+         <obj_property name="ObjectShortName">ClearReg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_level_tb/DUT/Control/LoadImmediatesMux" type="logic">
+         <obj_property name="ElementShortName">LoadImmediatesMux</obj_property>
+         <obj_property name="ObjectShortName">LoadImmediatesMux</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_level_tb/DUT/Control/RegWrite" type="logic">
+         <obj_property name="ElementShortName">RegWrite</obj_property>
+         <obj_property name="ObjectShortName">RegWrite</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_level_tb/DUT/Control/Jump" type="logic">
+         <obj_property name="ElementShortName">Jump</obj_property>
+         <obj_property name="ObjectShortName">Jump</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group42" type="group">
+      <obj_property name="label">Register Signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/top_level_tb/DUT/Registers/RegWr" type="logic">
+         <obj_property name="ElementShortName">RegWr</obj_property>
+         <obj_property name="ObjectShortName">RegWr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_level_tb/DUT/Registers/Rd" type="array">
+         <obj_property name="ElementShortName">Rd[2:0]</obj_property>
+         <obj_property name="ObjectShortName">Rd[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_level_tb/DUT/Registers/Rs" type="array">
+         <obj_property name="ElementShortName">Rs[2:0]</obj_property>
+         <obj_property name="ObjectShortName">Rs[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_level_tb/DUT/Registers/Rt" type="array">
+         <obj_property name="ElementShortName">Rt[2:0]</obj_property>
+         <obj_property name="ObjectShortName">Rt[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_level_tb/DUT/Registers/busW" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">busW[15:0]</obj_property>
+         <obj_property name="ObjectShortName">busW[15:0]</obj_property>
+         <obj_property name="label">Write Data</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_level_tb/DUT/Registers/BusA" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">BusA[15:0]</obj_property>
+         <obj_property name="ObjectShortName">BusA[15:0]</obj_property>
+         <obj_property name="label">Rs_out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_level_tb/DUT/Registers/BusB" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">BusB[15:0]</obj_property>
+         <obj_property name="ObjectShortName">BusB[15:0]</obj_property>
+         <obj_property name="label">Rt_out</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/top_level_tb/DUT/Registers/Registers" type="array">
+      <obj_property name="ElementShortName">Registers[0:7][0:15]</obj_property>
+      <obj_property name="ObjectShortName">Registers[0:7][0:15]</obj_property>
+   </wvobject>
+   <wvobject fp_name="group34" type="group">
+      <obj_property name="label">ALU Signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/top_level_tb/DUT/ALU/ALUCtr" type="array">
+         <obj_property name="ElementShortName">ALUCtr[2:0]</obj_property>
+         <obj_property name="ObjectShortName">ALUCtr[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_level_tb/DUT/ALU/BusA" type="array">
+         <obj_property name="ElementShortName">BusA[15:0]</obj_property>
+         <obj_property name="ObjectShortName">BusA[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_level_tb/DUT/ALU/BusB" type="array">
+         <obj_property name="ElementShortName">BusB[15:0]</obj_property>
+         <obj_property name="ObjectShortName">BusB[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_level_tb/DUT/ALU/zero" type="logic">
+         <obj_property name="ElementShortName">zero</obj_property>
+         <obj_property name="ObjectShortName">zero</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_level_tb/DUT/ALU/result" type="array">
+         <obj_property name="ElementShortName">result[15:0]</obj_property>
+         <obj_property name="ObjectShortName">result[15:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group48" type="group">
+      <obj_property name="label">Data Memory Signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/top_level_tb/DUT/Mem/MemWrite" type="logic">
+         <obj_property name="ElementShortName">MemWrite</obj_property>
+         <obj_property name="ObjectShortName">MemWrite</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_level_tb/DUT/Mem/MemRead" type="logic">
+         <obj_property name="ElementShortName">MemRead</obj_property>
+         <obj_property name="ObjectShortName">MemRead</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_level_tb/DUT/Mem/ALU_Result" type="array">
+         <obj_property name="ElementShortName">ALU_Result[15:0]</obj_property>
+         <obj_property name="ObjectShortName">ALU_Result[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_level_tb/DUT/Mem/Read_Data" type="array">
+         <obj_property name="ElementShortName">Read_Data[15:0]</obj_property>
+         <obj_property name="ObjectShortName">Read_Data[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_level_tb/DUT/Mem/Write_Data" type="array">
+         <obj_property name="ElementShortName">Write_Data[15:0]</obj_property>
+         <obj_property name="ObjectShortName">Write_Data[15:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group239" type="group">
+      <obj_property name="label">PC + 1</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/top_level_tb/DUT/Small_Adder_One/A" type="array">
+         <obj_property name="ElementShortName">A[15:0]</obj_property>
+         <obj_property name="ObjectShortName">A[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_level_tb/DUT/Small_Adder_One/B" type="array">
+         <obj_property name="ElementShortName">B[15:0]</obj_property>
+         <obj_property name="ObjectShortName">B[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_level_tb/DUT/Small_Adder_One/C" type="array">
+         <obj_property name="ElementShortName">C[15:0]</obj_property>
+         <obj_property name="ObjectShortName">C[15:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group234" type="group">
+      <obj_property name="label">Calc Branch Address</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/top_level_tb/DUT/Small_Adder_Two/A" type="array">
+         <obj_property name="ElementShortName">A[15:0]</obj_property>
+         <obj_property name="ObjectShortName">A[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_level_tb/DUT/Small_Adder_Two/B" type="array">
+         <obj_property name="ElementShortName">B[15:0]</obj_property>
+         <obj_property name="ObjectShortName">B[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_level_tb/DUT/Small_Adder_Two/C" type="array">
+         <obj_property name="ElementShortName">C[15:0]</obj_property>
+         <obj_property name="ObjectShortName">C[15:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group225" type="group">
+      <obj_property name="label">Branch Mux</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/top_level_tb/DUT/Mux_Branch/A" type="array">
+         <obj_property name="ElementShortName">A[15:0]</obj_property>
+         <obj_property name="ObjectShortName">A[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_level_tb/DUT/Mux_Branch/B" type="array">
+         <obj_property name="ElementShortName">B[15:0]</obj_property>
+         <obj_property name="ObjectShortName">B[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_level_tb/DUT/Mux_Branch/C" type="array">
+         <obj_property name="ElementShortName">C[15:0]</obj_property>
+         <obj_property name="ObjectShortName">C[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="group229" type="group">
+         <obj_property name="label">PC + 1</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/top_level_tb/DUT/Small_Adder_One/A" type="array">
+            <obj_property name="ElementShortName">A[15:0]</obj_property>
+            <obj_property name="ObjectShortName">A[15:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_level_tb/DUT/Small_Adder_One/B" type="array">
+            <obj_property name="ElementShortName">B[15:0]</obj_property>
+            <obj_property name="ObjectShortName">B[15:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_level_tb/DUT/Small_Adder_One/C" type="array">
+            <obj_property name="ElementShortName">C[15:0]</obj_property>
+            <obj_property name="ObjectShortName">C[15:0]</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group244" type="group">
+      <obj_property name="label">Calc Jump Address</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/top_level_tb/DUT/Combine_JShift_OneSmall/A" type="array">
+         <obj_property name="ElementShortName">A[15:0]</obj_property>
+         <obj_property name="ObjectShortName">A[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_level_tb/DUT/Combine_JShift_OneSmall/B" type="array">
+         <obj_property name="ElementShortName">B[15:0]</obj_property>
+         <obj_property name="ObjectShortName">B[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_level_tb/DUT/Combine_JShift_OneSmall/C" type="array">
+         <obj_property name="ElementShortName">C[15:0]</obj_property>
+         <obj_property name="ObjectShortName">C[15:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group221" type="group">
+      <obj_property name="label">Jump Mux</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/top_level_tb/DUT/Mux_Jump/A" type="array">
+         <obj_property name="ElementShortName">A[15:0]</obj_property>
+         <obj_property name="ObjectShortName">A[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_level_tb/DUT/Mux_Jump/B" type="array">
+         <obj_property name="ElementShortName">B[15:0]</obj_property>
+         <obj_property name="ObjectShortName">B[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_level_tb/DUT/Mux_Jump/C" type="array">
+         <obj_property name="ElementShortName">C[15:0]</obj_property>
+         <obj_property name="ObjectShortName">C[15:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group318" type="group">
+      <obj_property name="label">Clear_Reg Mux</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/top_level_tb/DUT/MUX_ClearReg/A" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">A[15:0]</obj_property>
+         <obj_property name="ObjectShortName">A[15:0]</obj_property>
+         <obj_property name="label">RegWrite</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_level_tb/DUT/MUX_ClearReg/B" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">B[15:0]</obj_property>
+         <obj_property name="ObjectShortName">B[15:0]</obj_property>
+         <obj_property name="label">Zero</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_level_tb/DUT/MUX_ClearReg/C" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">C[15:0]</obj_property>
+         <obj_property name="ObjectShortName">C[15:0]</obj_property>
+         <obj_property name="label">Out</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group1274" type="group">
+      <obj_property name="label">Mux Mem to Reg</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/top_level_tb/DUT/MUX_MemToReg/A" type="array">
+         <obj_property name="ElementShortName">A[15:0]</obj_property>
+         <obj_property name="ObjectShortName">A[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_level_tb/DUT/MUX_MemToReg/B" type="array">
+         <obj_property name="ElementShortName">B[15:0]</obj_property>
+         <obj_property name="ObjectShortName">B[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_level_tb/DUT/MUX_MemToReg/C" type="array">
+         <obj_property name="ElementShortName">C[15:0]</obj_property>
+         <obj_property name="ObjectShortName">C[15:0]</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

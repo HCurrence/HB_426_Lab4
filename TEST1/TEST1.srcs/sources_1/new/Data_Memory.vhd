@@ -5,7 +5,8 @@ use IEEE.numeric_std.all;
 
 entity Data_Memory is
     generic(N : integer := 15);
-    Port ( MemWrite : in std_logic;
+    Port ( clk : in std_logic;
+           MemWrite : in std_logic;
            MemRead : in std_logic;
            ALU_Result : in unsigned (N downto 0);
            Read_Data : out unsigned (N downto 0);
@@ -15,23 +16,22 @@ end Data_Memory;
 architecture Behavioral of Data_Memory is
     type memory_data is array(0 to 65535) of unsigned(N downto 0);
     
-    signal memory : memory_data;
+    signal memory : memory_data := (others =>(others => '0'));
 begin
     
-    writeData : process(MemWrite, Write_Data, ALU_Result)
+    writeData : process(clk, MemWrite, Write_Data, ALU_Result)
     variable address : integer;
     begin
-        if(MemWrite = '1') then
+        if(rising_edge(clk) and MemWrite = '1') then
             address := TO_INTEGER(ALU_RESULT);
             memory(address) <= Write_Data;
-            Read_Data <= (others => '0');
         end if;
     end process writeData;
     
-    fetchData : process(MemRead, ALU_Result)
+    fetchData : process(clk, MemRead, ALU_Result, memory)
     variable address : integer;
     begin
-        if(MemRead = '1') then
+        if(rising_edge(clk) and MemRead = '1') then
             address := TO_INTEGER(ALU_RESULT);
             Read_Data <= memory(address);
         end if;

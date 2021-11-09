@@ -3,7 +3,8 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
 entity Instruction_Memory is
-    Port ( Read_Address : in unsigned (15 downto 0);
+    Port (
+           Read_Address : in unsigned (15 downto 0);
            Rs : out unsigned (2 downto 0);
            Rt : out unsigned (2 downto 0);
            Rd : out unsigned (2 downto 0);
@@ -15,7 +16,7 @@ entity Instruction_Memory is
 end Instruction_Memory;
 
 architecture Behavioral of Instruction_Memory is
-    type memory_data is array(0 to 38) of unsigned(15 downto 0);
+    type memory_data is array(0 to 39) of unsigned(15 downto 0);
     --total memory size: 65535
     
     signal memory : memory_data := ("1111000000000000",
@@ -31,9 +32,9 @@ architecture Behavioral of Instruction_Memory is
                                     "1000000001000001",
                                     "1001000010001111",
                                     "1000000011001111",
-                                    "1000000000000001",
-                                    "1001000000000101",
-                                    "1010111000000000",
+                                    "1000000110000001",
+                                    "1001000111000101",
+                                    "1010111000100111",
                                     "1110111111100000",
                                     "0010100110000000",
                                     "0111000101000001",
@@ -50,13 +51,14 @@ architecture Behavioral of Instruction_Memory is
                                     "1100000000000000",
                                     "1110101000000010",
                                     "0000010010101011",
-                                    "0001011011011001",
+                                    "0000011010011111",
                                     "1111000101000000",
                                     "1000000101001111",
                                     "1001000101001111",
                                     "0011101110000000",
                                     "0000110110010000",
-                                    "1011111000000000");
+                                    "1011111000000000",
+                                    "0000000000000000");
 
 begin
     

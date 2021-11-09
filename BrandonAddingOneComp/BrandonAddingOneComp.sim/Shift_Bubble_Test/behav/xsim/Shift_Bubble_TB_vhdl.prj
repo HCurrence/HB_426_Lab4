@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../TEST1.srcs/sources_1/new/Shift_Bubble.vhd" \
+"../../../../TEST1.srcs/Shift_Bubble_Test/imports/new/Shift_Bubble_TB.vhd" \
+
+# Do not sort compile order
+nosort

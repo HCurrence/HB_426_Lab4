@@ -1,8 +1,20 @@
 0.7
-2020.1
-May 27 2020
-20:09:33
-J:/Fall_2021/426/Lab/TEST1/ALU.vhdl,1634925910,vhdl,J:/Fall_2021/426/Lab/TEST1/top_level.vhdl,,,aluctr,,,,,,,,
-J:/Fall_2021/426/Lab/TEST1/Registers.vhdl,1634925382,vhdl,J:/Fall_2021/426/Lab/TEST1/top_level.vhdl,,,registers,,,,,,,,
-J:/Fall_2021/426/Lab/TEST1/top_level.vhdl,1634924630,vhdl,J:/Fall_2021/426/Lab/TEST1/top_level_tb.vhdl,,,top_level,,,,,,,,
-J:/Fall_2021/426/Lab/TEST1/top_level_tb.vhdl,1633733346,vhdl,,,,top_level_tb,,,,,,,,
+2020.2
+Nov 18 2020
+09:47:47
+C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/Registers.vhdl,1636414447,vhdl,C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/top_level.vhdl,,,registers,,,,,,,,
+C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/imports/TEST1/ALU_XOR.vhdl,1636433710,vhdl,C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/top_level.vhdl,,,alu,,,,,,,,
+C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/new/AND_Gate.vhd,1635466327,vhdl,C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/top_level.vhdl,,,and_gate,,,,,,,,
+C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/new/Combine_JShift_OneSmall.vhd,1636396004,vhdl,C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/top_level.vhdl,,,combine_jshift_onesmall,,,,,,,,
+C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/new/Control.vhd,1636438769,vhdl,C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/top_level.vhdl,,,control,,,,,,,,
+C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/new/Data_Memory.vhd,1636429795,vhdl,C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/top_level.vhdl,,,data_memory,,,,,,,,
+C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/new/Instruction_Memory.vhd,1636440474,vhdl,C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/top_level.vhdl,,,instruction_memory,,,,,,,,
+C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/new/MUX.vhd,1636091918,vhdl,C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/top_level.vhdl,,,mux,,,,,,,,
+C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/new/PC.vhd,1636398785,vhdl,C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/top_level.vhdl,,,pc,,,,,,,,
+C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/new/Shift_Bubble.vhd,1636396033,vhdl,C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/top_level.vhdl,,,shift_bubble,,,,,,,,
+C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/new/Sign_Extend.vhd,1636395979,vhdl,C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/top_level.vhdl,,,sign_extend,,,,,,,,
+C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/new/Small_Adder.vhd,1636396045,vhdl,C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/top_level.vhdl,,,small_adder,,,,,,,,
+C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/new/load_immediate_component.vhd,1636396023,vhdl,C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/top_level.vhdl,,,load_immediate_component,,,,,,,,
+C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/new/mux_two_outputs.vhd,1636396089,vhdl,C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/top_level.vhdl,,,mux_two_outputs,,,,,,,,
+C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/top_level.vhdl,1636430462,vhdl,C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/top_level_tb.vhdl,,,top_level,,,,,,,,
+C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/top_level_tb.vhdl,1636412934,vhdl,,,,top_level_tb,,,,,,,,
