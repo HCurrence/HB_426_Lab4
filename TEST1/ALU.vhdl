@@ -197,28 +197,31 @@ end procedure;
 
 --***********************************************************************
 
-procedure Arith_right_shift(signal  A : in unsigned(N downto 0);
+procedure Bitwise_Xor(signal  A : in unsigned(N downto 0);
+					  signal  B : in unsigned(N downto 0);
                       signal Z : out std_logic;
                       signal Res : out unsigned(N downto 0)) is
 variable result: unsigned(N downto 0);
 begin
 
-    if A(N) = '1' then
-        result(N) := '1';
-        result(14 downto 0) := A(15 downto 1);
-        result(14) := '0';
-    else
-        result(N) := '0';
-        result(13 downto 0) := A(14 downto 1);
-        result(14) := '0';
-    end if;
+	Res <= A XOR B;
+
+    -- if A(N) = '1' then
+        -- result(N) := '1';
+        -- result(14 downto 0) := A(15 downto 1);
+        -- result(14) := '0';
+    -- else
+        -- result(N) := '0';
+        -- result(13 downto 0) := A(14 downto 1);
+        -- result(14) := '0';
+    -- end if;
     
-    res <= result;
-    if(to_integer(result) = 0) THEN
-          Z <= '1';
-      else
-          Z <= '0';
-      END IF;
+    -- res <= result;
+    -- if(to_integer(result) = 0) THEN
+          -- Z <= '1';
+      -- else
+          -- Z <= '0';
+      -- END IF;
     
 end procedure;
 
@@ -252,7 +255,7 @@ begin
                 Bitwise_Not(BusA, zero, result);
                 --Bitwise NOT
             when "111" =>
-                Arith_right_shift(BusA, zero, result);
+                Bitwise_Xor(BusA, BusB, zero, result);
                 --Artihmetic right shift
             when others => report "other!";
         end case;

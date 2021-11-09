@@ -157,7 +157,7 @@ begin
              Rs => Rs,
              Rt => Rt,
              busW => ClearMux_Result,
-             BusA => BusAtoLoadImmediate,
+             BusA => BusA,
              BusB => BusBInterConnector);
              
       Mem : entity work.Data_Memory(Behavioral)
@@ -218,12 +218,12 @@ begin
 --                B=>busW,
 --                C=>BusB);      
        
-       MUX_FromRegisterA_ToAlu : entity work.Mux(Behavioral)
-       generic map(N => N)
-       port map(Sel=> Opcode_LoadImmediatesMux,
-                A=>BusAtoLoadImmediate,
-                B=>LoadImmediateZero_Sig,
-                C=>BusA); 
+--       MUX_FromRegisterA_ToAlu : entity work.Mux(Behavioral)
+--       generic map(N => N)
+--       port map(Sel=> Opcode_LoadImmediatesMux,
+--                A=>BusAtoLoadImmediate,
+--                B=>LoadImmediateZero_Sig,
+--                C=>BusA); 
        
        Mux_RegDst : entity work.Mux(Behavioral)
        generic map(N => 2)
