@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/new/Small_Adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Small_Adder'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/Small_Adder_Test/imports/new/Small_Adder_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Small_Adder_TB'
