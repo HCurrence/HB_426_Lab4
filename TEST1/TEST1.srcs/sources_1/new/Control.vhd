@@ -97,10 +97,10 @@ begin
             | "1001" => -- load lower immediate (lli)
                 RegDst <= '0';
                 Branch <= '0';
-                MemRead <= '0';
+                MemRead <= '1';
                 MemToReg <= 'X';
-                ALUOp <= "101";
-                MemWrite <= '1';
+                ALUOp <= "011";
+                MemWrite <= '0';
                 ALUSrc <= '1';
                 LoadImmediateSelect <= Opcode(1 downto 0);
                 ClearReg <= '0';

@@ -61,7 +61,7 @@ architecture simple of top_level is
     
     --Small Adder one Signal from PC to 
     signal From_PC : unsigned(N downto 0);
-    signal Plus_One : unsigned(N downto 0);
+    signal Plus_One : unsigned(N downto 0) := "0000000000000001";
     signal Small_Adder_One_Result : unsigned(N downto 0);
     
     --Small Adder Two Signal For 
@@ -81,7 +81,7 @@ architecture simple of top_level is
     
     --Clear Reg Mux Signals
     signal ClearMux_Result : unsigned(N downto 0);
-    signal ClearOn : unsigned(N downto 0);
+    signal ClearOn : unsigned(N downto 0) := (others => '0');
     --Jump Mux signals 
     signal To_Jump_Mux : unsigned(15 downto 0);
     

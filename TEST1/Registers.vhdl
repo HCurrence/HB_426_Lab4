@@ -20,7 +20,7 @@ end entity;
 
 architecture behavior of Registers is
     type Reg is array (0 to 7) of unsigned(0 to N);
-    signal Registers: Reg := (others =>(others => '0'));
+    signal Registers: Reg := (others =>(others => 'U'));
 
 begin
     Write_Read : process (clk)
