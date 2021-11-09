@@ -82,6 +82,14 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/imports/TEST1/ALU_XOR.vhdl">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/ALU_XOR.vhdl"/>
+          <Attr Name="ImportTime" Val="1636433710"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/new/AND_Gate.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>

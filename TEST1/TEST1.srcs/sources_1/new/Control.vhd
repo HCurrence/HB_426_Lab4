@@ -99,7 +99,7 @@ begin
                 Branch <= '0';
                 MemRead <= '0';
                 MemToReg <= 'X';
-                ALUOp <= "011";
+                ALUOp <= "111";
                 MemWrite <= '0';
                 ALUSrc <= '1';
                 LoadImmediateSelect <= Opcode(1 downto 0);
