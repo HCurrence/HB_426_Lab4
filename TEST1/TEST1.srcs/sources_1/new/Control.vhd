@@ -101,7 +101,7 @@ begin
                 MemToReg <= 'X';
                 ALUOp <= "111";
                 MemWrite <= '0';
-                ALUSrc <= '1';
+                ALUSrc <= '0';
                 LoadImmediateSelect <= Opcode(1 downto 0);
                 ClearReg <= '0';
 		        LoadImmediatesMux <= '1'; --loadi signal

@@ -1,5 +1,5 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/new/Control.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'Control'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/new/Instruction_Memory.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Instruction_Memory'
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/top_level.vhdl" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'top_level'
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/top_level_tb.vhdl" into library xil_defaultlib

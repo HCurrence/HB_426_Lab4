@@ -1,42 +1,70 @@
 Vivado Simulator 2020.2
 Time resolution is 1 ps
 Note: other!
-Time: 0 ps  Iteration: 0  Process: /top_level_tb/DUT/ALU/line__230  File: C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/imports/TEST1/ALU.vhdl
+Time: 0 ps  Iteration: 0  Process: /top_level_tb/DUT/ALU/line__233  File: C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/imports/TEST1/ALU_XOR.vhdl
 Note: other!
-Time: 0 ps  Iteration: 1  Process: /top_level_tb/DUT/ALU/line__230  File: C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/imports/TEST1/ALU.vhdl
+Time: 0 ps  Iteration: 1  Process: /top_level_tb/DUT/ALU/line__233  File: C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/imports/TEST1/ALU_XOR.vhdl
 Note: other!
-Time: 0 ps  Iteration: 2  Process: /top_level_tb/DUT/ALU/line__230  File: C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/imports/TEST1/ALU.vhdl
+Time: 0 ps  Iteration: 2  Process: /top_level_tb/DUT/ALU/line__233  File: C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/imports/TEST1/ALU_XOR.vhdl
 Note: other!
-Time: 0 ps  Iteration: 3  Process: /top_level_tb/DUT/ALU/line__230  File: C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/imports/TEST1/ALU.vhdl
+Time: 0 ps  Iteration: 3  Process: /top_level_tb/DUT/ALU/line__233  File: C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/imports/TEST1/ALU_XOR.vhdl
 Note: other!
-Time: 0 ps  Iteration: 4  Process: /top_level_tb/DUT/ALU/line__230  File: C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/imports/TEST1/ALU.vhdl
+Time: 0 ps  Iteration: 4  Process: /top_level_tb/DUT/ALU/line__233  File: C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/imports/TEST1/ALU_XOR.vhdl
 Note: other!
-Time: 30 ns  Iteration: 2  Process: /top_level_tb/DUT/ALU/line__230  File: C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/imports/TEST1/ALU.vhdl
+Time: 30 ns  Iteration: 1  Process: /top_level_tb/DUT/ALU/line__233  File: C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/imports/TEST1/ALU_XOR.vhdl
 Note: other!
-Time: 420 ns  Iteration: 3  Process: /top_level_tb/DUT/ALU/line__230  File: C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/imports/TEST1/ALU.vhdl
+Time: 420 ns  Iteration: 3  Process: /top_level_tb/DUT/ALU/line__233  File: C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/imports/TEST1/ALU_XOR.vhdl
 Note: other!
-Time: 430 ns  Iteration: 2  Process: /top_level_tb/DUT/ALU/line__230  File: C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/imports/TEST1/ALU.vhdl
+Time: 430 ns  Iteration: 1  Process: /top_level_tb/DUT/ALU/line__233  File: C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/imports/TEST1/ALU_XOR.vhdl
 Note: other!
-Time: 500 ns  Iteration: 3  Process: /top_level_tb/DUT/ALU/line__230  File: C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/imports/TEST1/ALU.vhdl
+Time: 500 ns  Iteration: 3  Process: /top_level_tb/DUT/ALU/line__233  File: C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/imports/TEST1/ALU_XOR.vhdl
 Note: other!
-Time: 500 ns  Iteration: 4  Process: /top_level_tb/DUT/ALU/line__230  File: C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/imports/TEST1/ALU.vhdl
+Time: 500 ns  Iteration: 4  Process: /top_level_tb/DUT/ALU/line__233  File: C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/imports/TEST1/ALU_XOR.vhdl
 Note: other!
-Time: 500 ns  Iteration: 5  Process: /top_level_tb/DUT/ALU/line__230  File: C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/imports/TEST1/ALU.vhdl
+Time: 500 ns  Iteration: 5  Process: /top_level_tb/DUT/ALU/line__233  File: C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/imports/TEST1/ALU_XOR.vhdl
 Note: other!
-Time: 510 ns  Iteration: 2  Process: /top_level_tb/DUT/ALU/line__230  File: C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/imports/TEST1/ALU.vhdl
+Time: 510 ns  Iteration: 1  Process: /top_level_tb/DUT/ALU/line__233  File: C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/imports/TEST1/ALU_XOR.vhdl
 Note: other!
-Time: 580 ns  Iteration: 3  Process: /top_level_tb/DUT/ALU/line__230  File: C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/imports/TEST1/ALU.vhdl
+Time: 580 ns  Iteration: 3  Process: /top_level_tb/DUT/ALU/line__233  File: C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/imports/TEST1/ALU_XOR.vhdl
 Note: other!
-Time: 590 ns  Iteration: 2  Process: /top_level_tb/DUT/ALU/line__230  File: C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/imports/TEST1/ALU.vhdl
+Time: 590 ns  Iteration: 1  Process: /top_level_tb/DUT/ALU/line__233  File: C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/imports/TEST1/ALU_XOR.vhdl
 Note: other!
-Time: 0 ps  Iteration: 0  Process: /top_level_tb/DUT/ALU/line__230  File: C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/imports/TEST1/ALU.vhdl
+Time: 0 ps  Iteration: 0  Process: /top_level_tb/DUT/ALU/line__233  File: C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/imports/TEST1/ALU_XOR.vhdl
 Note: other!
-Time: 0 ps  Iteration: 1  Process: /top_level_tb/DUT/ALU/line__230  File: C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/imports/TEST1/ALU.vhdl
+Time: 0 ps  Iteration: 1  Process: /top_level_tb/DUT/ALU/line__233  File: C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/imports/TEST1/ALU_XOR.vhdl
 Note: other!
-Time: 0 ps  Iteration: 2  Process: /top_level_tb/DUT/ALU/line__230  File: C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/imports/TEST1/ALU.vhdl
+Time: 0 ps  Iteration: 2  Process: /top_level_tb/DUT/ALU/line__233  File: C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/imports/TEST1/ALU_XOR.vhdl
 Note: other!
-Time: 0 ps  Iteration: 3  Process: /top_level_tb/DUT/ALU/line__230  File: C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/imports/TEST1/ALU.vhdl
+Time: 0 ps  Iteration: 3  Process: /top_level_tb/DUT/ALU/line__233  File: C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/imports/TEST1/ALU_XOR.vhdl
 Note: other!
-Time: 0 ps  Iteration: 4  Process: /top_level_tb/DUT/ALU/line__230  File: C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/imports/TEST1/ALU.vhdl
+Time: 0 ps  Iteration: 4  Process: /top_level_tb/DUT/ALU/line__233  File: C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/imports/TEST1/ALU_XOR.vhdl
 Note: other!
-Time: 30 ns  Iteration: 2  Process: /top_level_tb/DUT/ALU/line__230  File: C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/imports/TEST1/ALU.vhdl
+Time: 30 ns  Iteration: 1  Process: /top_level_tb/DUT/ALU/line__233  File: C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/imports/TEST1/ALU_XOR.vhdl
+Note: other!
+Time: 420 ns  Iteration: 3  Process: /top_level_tb/DUT/ALU/line__233  File: C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/imports/TEST1/ALU_XOR.vhdl
+Note: other!
+Time: 430 ns  Iteration: 1  Process: /top_level_tb/DUT/ALU/line__233  File: C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/imports/TEST1/ALU_XOR.vhdl
+Note: other!
+Time: 500 ns  Iteration: 3  Process: /top_level_tb/DUT/ALU/line__233  File: C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/imports/TEST1/ALU_XOR.vhdl
+Note: other!
+Time: 500 ns  Iteration: 4  Process: /top_level_tb/DUT/ALU/line__233  File: C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/imports/TEST1/ALU_XOR.vhdl
+Note: other!
+Time: 500 ns  Iteration: 5  Process: /top_level_tb/DUT/ALU/line__233  File: C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/imports/TEST1/ALU_XOR.vhdl
+Note: other!
+Time: 510 ns  Iteration: 1  Process: /top_level_tb/DUT/ALU/line__233  File: C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/imports/TEST1/ALU_XOR.vhdl
+Note: other!
+Time: 580 ns  Iteration: 3  Process: /top_level_tb/DUT/ALU/line__233  File: C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/imports/TEST1/ALU_XOR.vhdl
+Note: other!
+Time: 590 ns  Iteration: 1  Process: /top_level_tb/DUT/ALU/line__233  File: C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/imports/TEST1/ALU_XOR.vhdl
+Note: other!
+Time: 0 ps  Iteration: 0  Process: /top_level_tb/DUT/ALU/line__233  File: C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/imports/TEST1/ALU_XOR.vhdl
+Note: other!
+Time: 0 ps  Iteration: 1  Process: /top_level_tb/DUT/ALU/line__233  File: C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/imports/TEST1/ALU_XOR.vhdl
+Note: other!
+Time: 0 ps  Iteration: 2  Process: /top_level_tb/DUT/ALU/line__233  File: C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/imports/TEST1/ALU_XOR.vhdl
+Note: other!
+Time: 0 ps  Iteration: 3  Process: /top_level_tb/DUT/ALU/line__233  File: C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/imports/TEST1/ALU_XOR.vhdl
+Note: other!
+Time: 0 ps  Iteration: 4  Process: /top_level_tb/DUT/ALU/line__233  File: C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/imports/TEST1/ALU_XOR.vhdl
+Note: other!
+Time: 30 ns  Iteration: 1  Process: /top_level_tb/DUT/ALU/line__233  File: C:/Users/hpcpe/Documents/GitHub/HB_426_Lab4/TEST1/TEST1.srcs/sources_1/imports/TEST1/ALU_XOR.vhdl
