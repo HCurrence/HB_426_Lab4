@@ -22,7 +22,7 @@ begin
     writeData : process(clk, MemWrite, Write_Data, ALU_Result)
     variable address : integer;
     begin
-        if(falling_edge(clk) and MemWrite = '1') then
+        if(rising_edge(clk) and MemWrite = '1') then
             address := TO_INTEGER(ALU_RESULT);
             memory(address) <= Write_Data;
         end if;

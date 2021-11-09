@@ -97,7 +97,7 @@ begin
             | "1001" => -- load lower immediate (lli)
                 RegDst <= '0';
                 Branch <= '0';
-                MemRead <= '1';
+                MemRead <= '0';
                 MemToReg <= 'X';
                 ALUOp <= "011";
                 MemWrite <= '0';
@@ -105,7 +105,7 @@ begin
                 LoadImmediateSelect <= Opcode(1 downto 0);
                 ClearReg <= '0';
 		        LoadImmediatesMux <= '1'; --loadi signal
-                RegWrite <= '0';
+                RegWrite <= '1';
                 Jump <= '0';
             when "1010" -- branch when equal (beq)
             | "1011" => -- branch when not equal (bne)
